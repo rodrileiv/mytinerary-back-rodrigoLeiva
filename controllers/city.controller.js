@@ -6,8 +6,11 @@ const controller = {
         if(req.query.name) {
             queries.name = new RegExp(`^${req.query.name}`, 'i');
         }
+        if(req.query.continent) {
+            queries.continent = req.query.continent
+        }
         try {
-            const cities = await City.find(queries);
+            const cities = await City.find(queries).populate('created_by');
             if(cities.length > 0) {   
                 return res.status(200).json({
                     success: true,
@@ -16,7 +19,7 @@ const controller = {
             }
             return res.status(404).json({
                 succes: false,
-                message: 'No Cities matching your search'
+                message: 'No Cities matching in your search'
             })
         } catch (error) {
             console.log(error);
