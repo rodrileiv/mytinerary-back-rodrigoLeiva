@@ -1,0 +1,19 @@
+{
+    "cities": [
+        {"name": "Cancun", "image": "https://ibb.co/Rh61kkX", "country": "Mexico", "continent": "America"},
+        {"name": "New York", "image": "https://ibb.co/Mfnv9Xx", "country": "United States", "continent": "America"},
+        {"name": "Rio de Janeiro", "image": "https://ibb.co/3BFwN0f", "country": "Brazil", "continent": "America"},
+        {"name": "Ushuaia", "image": "https://ibb.co/GcBk9H0", "country": "Argentina", "continent": "America"},
+        {"name": "Bangkok", "image": "https://ibb.co/L1p2GJ2", "country": "Thailand", "continent": "Asia"},
+        {"name": "Pekin", "image": "https://ibb.co/xFBXDTH", "country": "China", "continent": "Asia"},
+        {"name": "Singapore", "image": "https://ibb.co/TWwB0N5", "country": "Singapore", "continent": "Asia"},
+        {"name": "Tokyo", "image": "https://ibb.co/CWvtbBZ", "country": "Japan", "continent": "Asia"},
+        {"name": "Ibiza", "image": "https://ibb.co/3fkMCT3", "country": "Spain", "continent": "Europe"},
+        {"name": "London", "image": "https://ibb.co/z2J71Zd", "country": "England", "continent": "Europe"},
+        {"name": "Paris", "image": "https://ibb.co/qW8ZMgt", "country": "France", "continent": "Europe"},
+        {"name": "Rome", "image": "https://ibb.co/WkDJ2jn", "country": "Italy", "continent": "Europe"},
+        {"name": "Sidney", "image": "https://ibb.co/K6SCZ2y", "country": "Australia", "continent": "Oceania"},
+        {"name": "Majuro", "image": "https://ibb.co/wCFGKv1", "country": "Marshall Islands", "continent": "Oceania"},
+        {"name": "Suva", "image": "https://ibb.co/28v63mT", "country": "Fiyi", "continent": "Oceania"}
+    ]
+}

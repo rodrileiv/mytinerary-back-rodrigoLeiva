@@ -1,11 +1,27 @@
+import User from "../models/User.js";
+
 const controller = {
     getUsers: (req, res) => {
         res.json({
-            user: 'Rodri'
+            user: "Rodrigo Leiva",
+            email: "rodrigoleiva@example.com"
         });
     },
-    postUser: () => {},
-    deleteUser: () => {}, 
+    createUser: async (req, res) => {
+        try {
+            const newUser = await User.create(req.body);
+            return res.status(201).json({
+                success: true,
+                message: 'User generated'
+            });
+        } catch (error) {
+            console.log(error).json({
+                success: false,
+                message: 'Error creating user'
+            })
+        }
+    },
+    deleteUser: () => {},
 }
 
-export default controller
+export default controller;
