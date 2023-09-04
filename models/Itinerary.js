@@ -1,8 +1,6 @@
 import { Schema, model } from "mongoose";
 
-let collection = 'itineraries'
-
-let itinerarySchema = new Schema({
+const itinerarySchema = new Schema({
     city: {
         type: Schema.Types.ObjectId,
         ref: 'City',
@@ -22,6 +20,6 @@ let itinerarySchema = new Schema({
     timestamps: true,
 });
 
-const Itinerary = model(collection, itinerarySchema);
+const Itinerary = model("Itinerary", itinerarySchema);
 
 export default Itinerary;
