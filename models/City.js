@@ -1,17 +1,20 @@
-import { Schema, model, Types } from "mongoose";
+import { Schema, model } from "mongoose";
 
-const collection = 'cities';
+let collection = 'cities'
 
-const schema = new Schema({
+let schema = new Schema({
     name: { type: String, required: true},
     image: { type: String, required: true},
     country: { type: String, required: true},
-    continent: {type: String, required: true},
-    created_by: {type: Types.ObjectId, ref: 'users'}
-}, {
-    timestamps: true
-})
+    description: { type: String, required: true},
+    itineraries: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Itinerary'
+    }]
+},{
+    timestamps:true
+    })
 
-const City = model(collection, schema)
+    const City = model(collection, schema)
 
-export default City;
+    export default City;
